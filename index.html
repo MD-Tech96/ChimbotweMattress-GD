@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chimbotwe Mattress General Dealers E-Commerce</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #bfe9cc, #355c4d);
+      text-align: center;
+      padding: 1rem 0;
+    }
+    header img {
+      width: 100px;
+      height: 70px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline-block;
+      margin: 0 0 0 1rem;
+      font-size: 2.5rem;
+      color: gold;
+      vertical-align: middle;
+}
+    }
+    .main-container {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .sidebar {
+      width: 250%;
+      background: linear-gradient(to bottom, #cfe9d4, #2d4a3f);
+      padding: 1rem;
+      color: #fff;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+    }
+    .sidebar img {
+      width: 110%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .products {
+      width: 80%;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    }
+    .product-card {
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+    .product-card h4 {
+      margin: 0.5rem 0;
+    }
+    .product-card img.main-img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .thumbnails {
+      display: flex;
+      gap: 0.3rem;
+      margin-top: 0.5rem;
+    }
+    .thumbnails img {
+      width: 45px;
+      height: 45px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .footer {
+      background: linear-gradient(to right, #cfe9d4, #2d4a3f);
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+    .contact-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .contact-buttons a {
+      display: block;
+      margin-top: 10px;
+    }
+    .contact-buttons img {
+      width: 48px;
+      height: 48px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="logo2.jpeg" alt="Logo">
+    <h1>Chimbotwe Mattresses & General Dealers &reg;</h1>
+  </div>
+  <div class="header-image-container">
+    <img src="Urest.png" alt="Header Decorative Image">
+  </div>
+</header>
+
+<div class="main-container">
+  <aside class="sidebar">
+    <h2>Promotions</h2>
+    <img src="Manal.jpeg" alt="Ad 1">
+    <img src="ManalPromo.jpeg" alt="Ad 2">
+    <img src="chimbotwe.jpeg" alt="Ad 3">
+    <img src="Urest.png" alt="Ad 4">
+  </aside>
+
+  <section class="products">
+
+    <div class="product-card">
+      <img class="main-img" id="main-1" src="manallady.jpeg" alt="Mattress 1">
+      <div class="thumbnails">
+        <img src="manal-m1.jpeg" onclick="document.getElementById('main-1').src='manal-m1.jpeg'">
+        <img src="manal-m2.jpeg" onclick="document.getElementById('main-1').src='manal-m2.jpeg'">
+        <img src="https://example.com/mattress_1_3.jpg" onclick="document.getElementById('main-1').src='https://example.com/mattress_1_3.jpg'">
+      </div>
+      <h4>Premium Mattress 1</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2720</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-2" src="Optmattress.jpeg" alt="Mattress 2">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_2_1.jpg" onclick="document.getElementById('main-2').src='https://example.com/mattress_2_1.jpg'">
+        <img src="https://example.com/mattress_2_2.jpg" onclick="document.getElementById('main-2').src='https://example.com/mattress_2_2.jpg'">
+        <img src="https://example.com/mattress_2_3.jpg" onclick="document.getElementById('main-2').src='https://example.com/mattress_2_3.jpg'">
+      </div>
+      <h4>Premium Mattress 2</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2740</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-3" src="mattress3.jpeg" alt="Mattress 3">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_3_1.jpg" onclick="document.getElementById('main-3').src='https://example.com/mattress_3_1.jpg'">
+        <img src="https://example.com/mattress_3_2.jpg" onclick="document.getElementById('main-3').src='https://example.com/mattress_3_2.jpg'">
+        <img src="https://example.com/mattress_3_3.jpg" onclick="document.getElementById('main-3').src='https://example.com/mattress_3_3.jpg'">
+      </div>
+      <h4>Premium Mattress 3</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2760</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-4" src="Mattress2.jpeg" alt="Mattress 4">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_4_1.jpg" onclick="document.getElementById('main-4').src='https://example.com/mattress_4_1.jpg'">
+        <img src="https://example.com/mattress_4_2.jpg" onclick="document.getElementById('main-4').src='https://example.com/mattress_4_2.jpg'">
+        <img src="https://example.com/mattress_4_3.jpg" onclick="document.getElementById('main-4').src='https://example.com/mattress_4_3.jpg'">
+      </div>
+      <h4>Premium Mattress 4</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2780</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-5" src="Mattresstack.png" alt="Mattress 5">
+      <div class="thumbnails">
+        <img src="Mattresstack.png" onclick="document.getElementById('main-5').src='https://example.com/mattress_5_1.jpg'">
+        <img src="https://example.com/mattress_5_2.jpg" onclick="document.getElementById('main-5').src='https://example.com/mattress_5_2.jpg'">
+        <img src="https://example.com/mattress_5_3.jpg" onclick="document.getElementById('main-5').src='https://example.com/mattress_5_3.jpg'">
+      </div>
+      <h4>Premium Mattress 5</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2800</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-6" src="SDPillow.jpeg" alt="Mattress 6">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_6_1.jpg" onclick="document.getElementById('main-6').src='https://example.com/mattress_6_1.jpg'">
+        <img src="https://example.com/mattress_6_2.jpg" onclick="document.getElementById('main-6').src='https://example.com/mattress_6_2.jpg'">
+        <img src="https://example.com/mattress_6_3.jpg" onclick="document.getElementById('main-6').src='https://example.com/mattress_6_3.jpg'">
+      </div>
+      <h4>Premium Mattress 6</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2820</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-7" src="Pillow1.jpeg" alt="Mattress 7">
+      <div class="thumbnails">
+        <img src="WhitePillow.jpeg" onclick="document.getElementById('main-7').src='WhitePillow.jpeg'">
+        <img src="Pillow1.jpeg" onclick="document.getElementById('main-7').src='Pillow1.jpeg'">
+        <img src="https://example.com/mattress_7_3.jpg" onclick="document.getElementById('main-7').src='https://example.com/mattress_7_3.jpg'">
+      </div>
+      <h4>Premium Mattress 7</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2840</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-8" src="Pillow2.jpeg" alt="Mattress 8">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_8_1.jpg" onclick="document.getElementById('main-8').src='https://example.com/mattress_8_1.jpg'">
+        <img src="https://example.com/mattress_8_2.jpg" onclick="document.getElementById('main-8').src='https://example.com/mattress_8_2.jpg'">
+        <img src="https://example.com/mattress_8_3.jpg" onclick="document.getElementById('main-8').src='https://example.com/mattress_8_3.jpg'">
+      </div>
+      <h4>Premium Mattress 8</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2860</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-9" src="Pillow3.jpeg" alt="Mattress 9">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_9_1.jpg" onclick="document.getElementById('main-9').src='https://example.com/mattress_9_1.jpg'">
+        <img src="https://example.com/mattress_9_2.jpg" onclick="document.getElementById('main-9').src='https://example.com/mattress_9_2.jpg'">
+        <img src="https://example.com/mattress_9_3.jpg" onclick="document.getElementById('main-9').src='https://example.com/mattress_9_3.jpg'">
+      </div>
+      <h4>Premium Mattress 9</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2880</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-10" src="Redbluepillow.jpeg" alt="Mattress 10">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_10_1.jpg" onclick="document.getElementById('main-10').src='https://example.com/mattress_10_1.jpg'">
+        <img src="https://example.com/mattress_10_2.jpg" onclick="document.getElementById('main-10').src='https://example.com/mattress_10_2.jpg'">
+        <img src="https://example.com/mattress_10_3.jpg" onclick="document.getElementById('main-10').src='https://example.com/mattress_10_3.jpg'">
+      </div>
+      <h4>Premium Mattress 10</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2900</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-11" src="mattress4.jpeg" alt="Mattress 11">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_11_1.jpg" onclick="document.getElementById('main-11').src='https://example.com/mattress_11_1.jpg'">
+        <img src="https://example.com/mattress_11_2.jpg" onclick="document.getElementById('main-11').src='https://example.com/mattress_11_2.jpg'">
+        <img src="https://example.com/mattress_11_3.jpg" onclick="document.getElementById('main-11').src='https://example.com/mattress_11_3.jpg'">
+      </div>
+      <h4>Premium Mattress 11</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2920</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-12" src="Bed1.jpeg" alt="Mattress 12">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_12_1.jpg" onclick="document.getElementById('main-12').src='https://example.com/mattress_12_1.jpg'">
+        <img src="https://example.com/mattress_12_2.jpg" onclick="document.getElementById('main-12').src='https://example.com/mattress_12_2.jpg'">
+        <img src="https://example.com/mattress_12_3.jpg" onclick="document.getElementById('main-12').src='https://example.com/mattress_12_3.jpg'">
+      </div>
+      <h4>Premium Mattress 12</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2940</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-13" src="Bed3.jpeg" alt="Mattress 13">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_13_1.jpg" onclick="document.getElementById('main-13').src='https://example.com/mattress_13_1.jpg'">
+        <img src="https://example.com/mattress_13_2.jpg" onclick="document.getElementById('main-13').src='https://example.com/mattress_13_2.jpg'">
+        <img src="https://example.com/mattress_13_3.jpg" onclick="document.getElementById('main-13').src='https://example.com/mattress_13_3.jpg'">
+      </div>
+      <h4>Premium Mattress 13</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2960</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-14" src="BlueBed.jpeg" alt="Mattress 14">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_14_1.jpg" onclick="document.getElementById('main-14').src='https://example.com/mattress_14_1.jpg'">
+        <img src="https://example.com/mattress_14_2.jpg" onclick="document.getElementById('main-14').src='https://example.com/mattress_14_2.jpg'">
+        <img src="https://example.com/mattress_14_3.jpg" onclick="document.getElementById('main-14').src='https://example.com/mattress_14_3.jpg'">
+      </div>
+      <h4>Premium Mattress 14</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 2980</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-15" src="RedBed.jpeg" alt="Mattress 15">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_15_1.jpg" onclick="document.getElementById('main-15').src='https://example.com/mattress_15_1.jpg'">
+        <img src="https://example.com/mattress_15_2.jpg" onclick="document.getElementById('main-15').src='https://example.com/mattress_15_2.jpg'">
+        <img src="https://example.com/mattress_15_3.jpg" onclick="document.getElementById('main-15').src='https://example.com/mattress_15_3.jpg'">
+      </div>
+      <h4>Premium Mattress 15</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3000</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-16" src="FloralMattress.jpeg" alt="Mattress 16">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_16_1.jpg" onclick="document.getElementById('main-16').src='https://example.com/mattress_16_1.jpg'">
+        <img src="https://example.com/mattress_16_2.jpg" onclick="document.getElementById('main-16').src='https://example.com/mattress_16_2.jpg'">
+        <img src="https://example.com/mattress_16_3.jpg" onclick="document.getElementById('main-16').src='https://example.com/mattress_16_3.jpg'">
+      </div>
+      <h4>Premium Mattress 16</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3020</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-17" src="whitebed.jpeg" alt="Mattress 17">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_17_1.jpg" onclick="document.getElementById('main-17').src='https://example.com/mattress_17_1.jpg'">
+        <img src="https://example.com/mattress_17_2.jpg" onclick="document.getElementById('main-17').src='https://example.com/mattress_17_2.jpg'">
+        <img src="https://example.com/mattress_17_3.jpg" onclick="document.getElementById('main-17').src='https://example.com/mattress_17_3.jpg'">
+      </div>
+      <h4>Premium Mattress 17</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3040</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-18" src="Optmattress.jpeg" alt="Mattress 18">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_18_1.jpg" onclick="document.getElementById('main-18').src='https://example.com/mattress_18_1.jpg'">
+        <img src="https://example.com/mattress_18_2.jpg" onclick="document.getElementById('main-18').src='https://example.com/mattress_18_2.jpg'">
+        <img src="https://example.com/mattress_18_3.jpg" onclick="document.getElementById('main-18').src='https://example.com/mattress_18_3.jpg'">
+      </div>
+      <h4>Premium Mattress 18</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3060</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-19" src="Optbed2.jpeg" alt="Mattress 19">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_19_1.jpg" onclick="document.getElementById('main-19').src='https://example.com/mattress_19_1.jpg'">
+        <img src="https://example.com/mattress_19_2.jpg" onclick="document.getElementById('main-19').src='https://example.com/mattress_19_2.jpg'">
+        <img src="https://example.com/mattress_19_3.jpg" onclick="document.getElementById('main-19').src='https://example.com/mattress_19_3.jpg'">
+      </div>
+      <h4>Premium Mattress 19</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3080</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-20" src="Greenmattress1.2.jpeg" alt="Mattress 20">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_20_1.jpg" onclick="document.getElementById('main-20').src='https://example.com/mattress_20_1.jpg'">
+        <img src="https://example.com/mattress_20_2.jpg" onclick="document.getElementById('main-20').src='https://example.com/mattress_20_2.jpg'">
+        <img src="https://example.com/mattress_20_3.jpg" onclick="document.getElementById('main-20').src='https://example.com/mattress_20_3.jpg'">
+      </div>
+      <h4>Premium Mattress 20</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3100</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-21" src="RedMattress1.1.jpeg" alt="Mattress 21">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_21_1.jpg" onclick="document.getElementById('main-21').src='https://example.com/mattress_21_1.jpg'">
+        <img src="https://example.com/mattress_21_2.jpg" onclick="document.getElementById('main-21').src='https://example.com/mattress_21_2.jpg'">
+        <img src="https://example.com/mattress_21_3.jpg" onclick="document.getElementById('main-21').src='https://example.com/mattress_21_3.jpg'">
+      </div>
+      <h4>Premium Mattress 21</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3120</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-22" src="laundrybasket.jpeg" alt="Mattress 22">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_22_1.jpg" onclick="document.getElementById('main-22').src='https://example.com/mattress_22_1.jpg'">
+        <img src="https://example.com/mattress_22_2.jpg" onclick="document.getElementById('main-22').src='https://example.com/mattress_22_2.jpg'">
+        <img src="https://example.com/mattress_22_3.jpg" onclick="document.getElementById('main-22').src='https://example.com/mattress_22_3.jpg'">
+      </div>
+      <h4>Premium Mattress 22</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3140</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-23" src="Chaircushions.jpeg" alt="Mattress 23">
+      <div class="thumbnails">
+        <img src="https://example.com/mattress_23_1.jpg" onclick="document.getElementById('main-23').src='https://example.com/mattress_23_1.jpg'">
+        <img src="https://example.com/mattress_23_2.jpg" onclick="document.getElementById('main-23').src='https://example.com/mattress_23_2.jpg'">
+        <img src="https://example.com/mattress_23_3.jpg" onclick="document.getElementById('main-23').src='https://example.com/mattress_23_3.jpg'">
+      </div>
+      <h4>Premium Mattress 23</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3160</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-24" src="1cushion.jpeg" alt="Mattress 24">
+      <div class="thumbnails">
+        <img src="2cushion.jpeg" onclick="document.getElementById('main-24').src='2cushion.jpeg'">
+        <img src="1cushion.jpeg" onclick="document.getElementById('main-24').src='1cushion.jpeg'">
+        <img src="2cushion.jpeg" onclick="document.getElementById('main-24').src='2cushion.jpeg'">
+      </div>
+      <h4>Premium Mattress 24</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3180</p>
+    </div>
+    
+    <div class="product-card">
+      <img class="main-img" id="main-25" src="Petbed1.jpeg" alt="Mattress 25">
+      <div class="thumbnails">
+        <img src="Petbed2.jpeg" onclick="document.getElementById('main-25').src='Petbed2.jpeg'">
+        <img src="Petbed1.jpeg" onclick="document.getElementById('main-25').src='Petbed1.jpeg'">
+        <img src="Petbed2.jpeg" onclick="document.getElementById('main-25').src='Petbed2.jpeg'">
+      </div>
+      <h4>Premium Mattress 25</h4>
+      <p>Location: Lusaka</p>
+      <p>Price: ZMW 3200</p>
+    </div>
+    
+  </section>
+</div>
+
+<div class="contact-buttons">
+  <a href="tel:+260761469412"><img src="https://img.icons8.com/fluency/48/phone.png" alt="Call"></a>
+  <a href="https://wa.me/260761469412" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp"></a>
+</div>
+
+<footer class="footer">
+  &copy; 2025 Chimbotwe Mattresses - Designed by MD Technologies
+</footer>
+
+</body>
+</html>
